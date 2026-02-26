@@ -18,7 +18,19 @@
   <details>
     <summary><strong>Day 2</strong></summary>
 
-  - (Add your Day 2 work here)
+  - Practiced PHP **data types**:
+    - String, Integer, Float, Boolean, Array, Object (`stdClass`), `NULL`, Resource (file handle)
+  - Learned to check and display types/values using:
+    - `var_dump()`, `gettype()`, `print_r()`
+  - Worked with **arrays**:
+    - Created arrays using `array(...)`
+    - Printed arrays using `print_r()` and `var_dump()`
+  - Practiced **basic file handling**:
+    - Opened a file using `fopen("sample.txt", "r")` and inspected the resource
+  - Practiced **strings inside HTML (PHP templating)**:
+    - Used short echo tag: `<?= ... ?>`
+    - Concatenated strings with `.`
+    - Displayed PHP variables in an HTML page (title, heading, paragraph)
 
   </details>
 
