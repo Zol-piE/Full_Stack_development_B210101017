@@ -14,6 +14,9 @@
         <a href="#">FLEXBOX</a>
         <a href="#">CSS</a>
       </nav>
+      <!--  
+        <p>Example Text</p>
+        -->
     </header>
     <article>
       <header>
@@ -24,7 +27,9 @@
           width="100"
           height="100"
         />
-        <p>Posted by <strong> Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <strong> Laura Jones</strong> on Monday, June 21st 2027
+        </p>
       </header>
       <img
         src="img/post-img.jpg"
@@ -84,8 +89,8 @@
       <p>Hopefully you learned something new here. See you next time!</p>
     </article>
     <aside>
-      <h3><strong>Related Post</strong></h3>
-      <ul>
+      <h4><strong>Related Post</strong></h4>
+      <ul class="remove">
         <li>
           <img
             src="img/related-1.jpg"
@@ -94,12 +99,12 @@
             height="75"
           />
           <a href="#" target="_blank">How to learn Web Development</a>
-          <p><strong>By sohag islam</strong></p>
+          <p class="name"><strong>By sohag islam</strong></p>
         </li>
         <li>
           <img src="img/related-2.jpg" alt="Thunder" width="75" height="75" />
           <a href="" target="_blank">The unknown</a>
-          <p><strong>By Tahmidul islam</strong></p>
+          <p class="name"><strong>By Tahmidul islam</strong></p>
         </li>
         <li>
           <img
@@ -109,7 +114,7 @@
             height="75"
           />
           <a href="" target="_blank">Why Js?</a>
-          <p><strong>By Sohan islam</strong></p>
+          <p class="name"><strong>By Sohan islam</strong></p>
         </li>
       </ul>
     </aside>
