@@ -5,15 +5,18 @@ h4,
 p,
 li {
   font-family: sans-serif;
+  color: rgb(59, 59, 59);
 }
 h1,
 h2,
 h3,
 h4 {
   text-transform: uppercase;
+  color: brown;
 }
 h1 {
   font-size: 40px;
+  color: blueviolet;
 }
 h2 {
   font-size: 45px;
@@ -51,4 +54,27 @@ footer p {
 }
 .remove {
   list-style: none;
+}
+.Main_header {
+  background-color: rgba(124, 124, 124, 0.281);
+}
+.RelatedPostBorder {
+  background-color: rgba(124, 124, 124, 0.281);
+  /* border: 5px solid blue; */
+  border-top: 5px solid blueviolet;
+  border-bottom: 5px solid blueviolet;
+}
+li:first-child {
+  font-weight: bold;
+}
+li:nth-child(1) {
+  color: red;
+}
+li:nth-child(even) {
+  color: blue;
+}
+
+a:link {
+  color: rgb(185, 105, 105);
+  text-decoration: none;
 }
