@@ -1,91 +1,75 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+* {
+  margin: 0;
+  padding: 0;
   font-family: sans-serif;
-  color: rgb(59, 59, 59);
 }
-h1,
-h2,
-h3,
-h4 {
-  text-transform: uppercase;
-  color: brown;
-}
-h1 {
-  font-size: 40px;
-  color: blueviolet;
-}
-h2 {
-  font-size: 45px;
-}
-h3 {
-  font-size: 35px;
-}
-h4 {
-  font-size: 25px;
-}
-nav {
-  font-size: 20px;
-}
-p {
-  font-size: 23px;
-  line-height: 1.5;
-}
-li {
-  font-size: 20px;
-}
-footer p {
-  font-size: 15px;
-}
-/* article header p {
-  font-style: italic;
-} */
-#author {
-  font-style: italic;
-  font-size: 18px;
-}
-.name {
-  font-weight: bold;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.remove {
-  list-style: none;
+body {
+  color: #e2e8f0;
+  background-color: #0f172a;
+  border-top: 10px solid #f59e0b;
 }
 .Main_header {
-  background-color: rgba(124, 124, 124, 0.281);
+  background-color: #1e293b;
+  width: auto;
+  padding: 20px 0px;
+  height: 100px;
 }
-.RelatedPostBorder {
-  background-color: rgba(124, 124, 124, 0.281);
-  /* border: 5px solid blue; */
-  border-top: 5px solid blueviolet;
-  border-bottom: 5px solid blueviolet;
+nav {
+  margin: 5px 10px !important;
+  padding: 5px 10px !important;
 }
-li:first-child {
-  font-weight: bold;
+.nav_style {
+  margin-right: 5px;
+  padding-right: 5px;
 }
-li:nth-child(1) {
-  color: red;
+h1,
+h2,
+h3,
+h4 {
+  color: #f8fafc;
+  margin: 10px 10px !important;
+  padding: 10px 10px !important;
+  width: 50%;
+  height: auto;
+  border: 5px dotted beige;
 }
-li:nth-child(even) {
-  color: blue;
+.htmlImage {
+  width: 60%;
+  height: auto;
 }
-a,
-a:link {
-  color: green;
+p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 10px 20px;
+  padding-right: 5px;
+}
+ul,
+ol {
+  margin: 10px 30px;
+  padding: 20px 20px;
+  font-size: 13px;
+}
+aside {
+  background-color: #1e293b;
+  width: 500px;
+  height: auto;
+  border-top: 5px solid #f59e0b;
+  margin: 30px 30px;
+}
+a {
+  color: rgb(255, 136, 0);
   text-decoration: none;
 }
 a:visited {
-  color: red;
+  color: rgba(255, 136, 0, 0.462);
+  text-decoration: wavy;
 }
 a:hover {
-  color: black;
-  text-decoration: underline dashed red;
+  color: #f59e0b;
+  text-decoration: underline wavy #f59e0b;
 }
-a:active {
-  color: black;
-  text-decoration: underline dotted red;
+.name {
+  font-size: 10px;
+  margin-left: 0px;
+  margin-top: 0px;
 }
