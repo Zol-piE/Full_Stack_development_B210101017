@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  box-sizing: border-box;
 }
 body {
   color: #e2e8f0;
@@ -14,13 +15,14 @@ body {
   height: 100px;
 }
 nav {
-  margin: 5px 10px !important;
-  padding: 5px 10px !important;
+  margin: 10px 10px !important;
+  padding: 10px 10px !important;
 }
 
 .nav_style {
   margin-right: 5px;
   padding-right: 5px;
+  font-size: 15px;
 }
 h1,
 h2,
@@ -29,8 +31,8 @@ h4 {
   color: #f8fafc;
   margin: 10px 10px !important;
   padding: 10px 10px !important;
-  width: 50%;
-  height: auto;
+  width: 60%;
+  /* height: auto; */
   border: 5px dotted beige;
   font-size: 20px;
 }
@@ -42,8 +44,9 @@ h1 {
   font-size: 25px;
 }
 .htmlImage {
-  width: 60%;
+  width: 100%;
   height: auto;
+  margin: 20px 0px;
 }
 p {
   font-size: 18px;
@@ -88,7 +91,8 @@ a:hover {
   color: #e2e8f0;
   background-color: #0f172a;
   border-top: 10px solid #f59e0b;
-  width: 1000px;
+  width: 1200px;
+  height: 100%;
   margin: 0px auto;
   position: relative;
 }
@@ -99,4 +103,37 @@ a:hover {
 }
 h3 + p ::first-line {
   color: orangered;
+}
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+  border: 2px solid black;
+}
+.clearFix::after {
+  clear: both;
+}
+article {
+  float: left;
+  width: 800px;
+}
+aside {
+  float: right;
+  width: 300px;
+  border-bottom: 5px solid #f59e0b;
+}
+footer {
+  clear: both;
+}
+.author-img {
+  width: 55px;
+  height: 55px;
+  float: left;
+  margin: 10px 10px;
+}
+.author {
+  float: left;
+  margin: 20px 0px;
+  padding: 10px 0px 0px 0px;
 }
