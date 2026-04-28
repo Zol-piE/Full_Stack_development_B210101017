@@ -1,18 +1,19 @@
 * {
   margin: 0px 0px;
   padding: 0px 0px;
+  box-sizing: border-box;
 }
 body {
   background-color: rgb(5, 208, 208);
-  height: 100%;
 }
 .container {
   width: 1200px;
-  height: 100%;
   margin: 0px auto;
   background-color: white;
 }
 .Box {
+  width: 100%;
+  background-color: steelblue;
   border: 5px solid black;
 }
 h1 {
@@ -22,4 +23,36 @@ h1 {
   text-transform: uppercase;
   padding: 20px;
   background-color: rgb(198, 195, 195);
+}
+.image {
+  float: left;
+  width: 400px;
+  height: 400px;
+  padding: 0px auto;
+}
+.product {
+  background-color: rgb(106, 106, 242);
+  float: right;
+  width: 800px;
+  height: 400px;
+  height: auto;
+}
+.clearFixProduct::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.price {
+  float: left;
+}
+.shipping {
+  float: right;
+}
+.clearFix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.shipping .price {
+  width: 100%;
 }
