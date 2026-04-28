@@ -24,35 +24,51 @@ h1 {
   padding: 20px;
   background-color: rgb(198, 195, 195);
 }
+.MainProduct {
+  width: 100%;
+  height: 400px;
+}
 .image {
   float: left;
-  width: 400px;
-  height: 400px;
-  padding: 0px auto;
+  width: 25%;
+  height: 100%;
 }
 .product {
-  background-color: rgb(106, 106, 242);
   float: right;
-  width: 800px;
-  height: 400px;
-  height: auto;
+  width: 75%;
+  height: 100%;
 }
-.clearFixProduct::after {
+.MainProduct::after {
   content: "";
   display: block;
   clear: both;
 }
-.price {
+.BuyProduct,
+.productInfo {
+  width: 50%;
+  height: 100%;
+}
+.BuyProduct {
+  background-color: beige;
   float: left;
 }
-.shipping {
+.productInfo {
+  background-color: bisque;
   float: right;
 }
-.clearFix::after {
-  content: "";
-  display: block;
-  clear: both;
+.Price,
+.Shipping {
+  width: 50%;
+  padding: 5px 0px;
 }
-.shipping .price {
-  width: 100%;
+.Price {
+  float: left;
+  font-weight: bold;
+  padding-left: 20px;
+}
+.Shipping {
+  float: right;
+  text-align: right;
+  text-transform: uppercase;
+  padding-right: 5px;
 }
