@@ -104,7 +104,7 @@ a:hover {
 h3 + p ::first-line {
   color: orangered;
 }
-h1 {
+/* h1 {
   float: left;
 }
 nav {
@@ -136,8 +136,9 @@ footer {
   float: left;
   margin: 20px 0px;
   padding: 10px 0px 0px 0px;
-}
-.containerTwo {
+} */
+/* flex Box */
+/* .containerTwo {
   display: flex;
   align-items: flex-start;
   gap: 50px;
@@ -147,4 +148,23 @@ article {
 }
 aside {
   flex: 0 0 350px;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 350px;
+  column-gap: 50px;
+  row-gap: 20px;
+  /* justify-items: start; */
+  align-items: start;
+}
+.Main_header {
+  grid-column: 1/-1;
+}
+article {
+}
+aside {
+}
+footer {
+  grid-column: 1/-1;
 }
