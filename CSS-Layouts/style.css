@@ -137,3 +137,14 @@ footer {
   margin: 20px 0px;
   padding: 10px 0px 0px 0px;
 }
+.containerTwo {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+article {
+  flex: 0 0 700px;
+}
+aside {
+  flex: 0 0 350px;
+}
