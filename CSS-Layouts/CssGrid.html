@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      .el {
+        font-size: 30px;
+        text-align: center;
+        width: auto;
+        height: auto;
+      }
+      .el-1 {
+        background-color: red;
+      }
+      .el-2 {
+        background-color: blue;
+      }
+      .el-3 {
+        background-color: yellow;
+      }
+      .el-4 {
+        background-color: green;
+      }
+      .el-5 {
+        background-color: purple;
+      }
+      .el-6 {
+        background-color: cyan;
+      }
+      .container {
+        width: 1000px;
+        height: 100%;
+        margin: 0 auto;
+        background-color: blanchedalmond;
+      }
+      .gridClass {
+        width: 100%;
+        height: auto;
+        border: 3px dashed black;
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 20px;
+        /* justify-items: center; */
+        /* align-items: stretch; */
+      }
+    </style>
+  </head>
+  <body>
+    <article class="container">
+      <div class="gridClass">
+        <div class="el el-1">1-html</div>
+        <div class="el el-2">2-php</div>
+        <div class="el el-3">3-python</div>
+        <div class="el el-4">4-c++</div>
+        <div class="el el-5">5-laraval</div>
+        <div class="el el-6">6-Java</div>
+      </div>
+    </article>
+  </body>
+</html>
