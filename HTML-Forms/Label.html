@@ -15,12 +15,8 @@
         required
       /><br /><br />
       <label for="LastName">Last name</label>
-      <input
-        type="text"
-        id="LastName"
-        placeholder="Name"
-        required
-      /><br /><br />
+      <input type="text" id="LastName" placeholder="Name" required />
+      <br /><br />
       <input type="email" required /> <br /><br />
       <textarea rows="5" cols="5"> Mulitple line text</textarea>
       <br /><br />
@@ -29,7 +25,19 @@
       <label for="Tosid"> Do You agree with Tos</label>
       <input type="checkbox" name="tos" id="Tosid" />
       <br /><br />
-      <
+
+      <label for="ShirtSize">Select Your Shirt Size</label>
+      <select name="ShirtSize" id="ShirtSize">
+        <option value="S">Small</option>
+        <option value="L">Large</option>
+        <option value="XL">XL</option>
+      </select>
+      <br /><br />
+      <input type="radio" name="Contact" id="call" value="Call" />
+      <label for="">Call Me</label>
+      <input type="radio" name="Contact" id="email" value="email" />
+      <label for="email">Email Me</label>
+      <br /><br />
       <button>Submit</button>
     </form>
   </body>
