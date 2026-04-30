@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .Container {
+        width: 1200px;
+        height: 100vh;
+        margin: 20px auto;
+        background-color: antiquewhite;
+        border: 5px solid black;
+      }
+      .click {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        padding: 15px;
+        transition:
+          background-color 5s,
+          transform 2s ease;
+      }
+      .click:hover {
+        background-color: rgb(228, 31, 31);
+        color: white;
+        transform: translateX(100px);
+      }
+      .card {
+        width: 150px;
+        height: 150px;
+        background: gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      }
+      .box-1 {
+        width: 100px;
+        height: 100px;
+        background-color: olive;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 50px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+      .box-1:hover {
+        transform: translateY(-10px) scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Container">
+      <h1>Transition Practice</h1>
+      <button class="click">Click Me</button>
+      <div class="card">Hover me</div>
+      <div class="box-1">BOX</div>
+    </div>
+  </body>
+</html>
