@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        font-size: 25px;
+      }
+      h2 {
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      }
+      .container {
+        transition: background-color 3s;
+        width: 1200px;
+        height: 100%;
+        background-color: beige;
+        margin: 0 auto;
+      }
+      @media print {
+        h2 {
+          font-size: 2rem;
+          color: white;
+        }
+        .container {
+          background-color: black;
+        }
+      }
+      @media only screen and (min-width: 500px) and (max-width: 900px) {
+        .container {
+          background-color: yellow;
+        }
+        h2::before {
+          content: "Changing ";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Hi I am Tomal</h2>
+    </div>
+  </body>
+</html>
