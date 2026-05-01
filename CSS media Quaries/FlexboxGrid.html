@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .Box {
+        box-sizing: border-box;
+        flex: 1 1 20%;
+        border: 3px solid black;
+        height: 300px;
+        background-color: aqua;
+      }
+      .Box:nth-child(2n) {
+        background-color: bisque;
+      }
+      @media screen and (max-width: 1000px) {
+        .Box {
+          flex: 1 1 25%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Box"></div>
+    <div class="Box"></div>
+    <div class="Box"></div>
+    <div class="Box"></div>
+    <div class="Box"></div>
+    <div class="Box"></div>
+    <div class="Box"></div>
+    <div class="Box"></div>
+    <div class="Box"></div>
+  </body>
+</html>
