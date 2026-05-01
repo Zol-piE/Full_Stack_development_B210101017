@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @media screen and (max-width: 480px) {
+        body {
+          background-color: yellow;
+        }
+        body::before {
+          content: "Mobile";
+        }
+        body {
+          transition:
+            background-color 1s ease,
+            font-size 1s ease;
+        }
+      }
+      @media screen and (min-width: 481px) and (max-width: 760px) {
+        body {
+          background-color: cyan;
+        }
+        body::before {
+          content: "Tablet";
+        }
+        body {
+          transition:
+            background-color 1s ease,
+            font-size 1s ease;
+        }
+      }
+      @media screen and (min-width: 761px) {
+        body {
+          background-color: grey;
+        }
+        body::before {
+          content: "Laptop";
+        }
+        body {
+          transition:
+            background-color 1s ease,
+            font-size 1s ease;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media Quaries</h1>
+  </body>
+</html>
