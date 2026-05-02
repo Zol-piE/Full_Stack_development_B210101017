@@ -25,6 +25,7 @@
         display: grid;
         justify-content: center;
         align-content: center;
+        gap: 50px;
       }
 
       /* OUTER handles scaling */
@@ -75,6 +76,40 @@
           transform: rotate(-1turn);
         }
       }
+      .BoxTwo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 75px;
+        height: 50px;
+        background-color: rgba(245, 72, 20, 0.937);
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        animation: slide 10s linear 1s infinite;
+      }
+      @keyframes slide {
+        0% {
+        }
+        20% {
+          transform: translateX(50px);
+          background-color: blueviolet;
+        }
+        40% {
+          transform: translateX(100px);
+          background-color: rgb(224, 8, 159);
+        }
+        60% {
+          transform: translateX(50px);
+          background-color: rgb(19, 205, 87);
+        }
+        80% {
+          transform: translateX(0px);
+          background-color: rgb(19, 162, 205);
+        }
+        100% {
+        }
+      }
     </style>
   </head>
 
@@ -84,6 +119,9 @@
         <div class="Box">
           <p>BOX</p>
         </div>
+      </div>
+      <div class="BoxTwo">
+        <p>Box-2</p>
       </div>
     </div>
   </body>
