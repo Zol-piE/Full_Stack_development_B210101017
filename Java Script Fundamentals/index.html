@@ -1,12 +1,135 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CSTU • Chandpur Science and Technology University</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/app.js"></script>
   </head>
   <body>
-    <script src="script.js"></script>
-    <h1>header</h1>
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="index.html">
+          <span class="brand__mark">CSTU</span>
+          <span class="brand__text"
+            >Chandpur Science and Technology University</span
+          >
+        </a>
+        <nav class="nav">
+          <a class="nav__link" href="#programs">Programs</a>
+          <a class="nav__link" href="#admissions">Admissions</a>
+          <a class="nav__link" href="#announcements">Announcements</a>
+          <a class="btn btn--primary" href="login.html">Portal Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero__inner">
+          <div>
+            <h1>Education Management Portal</h1>
+            <p class="lead">
+              Manage students, lecturers, courses, grades, and announcements — a
+              front-end prototype built with HTML, CSS, and JavaScript.
+            </p>
+            <div class="stack-row">
+              <a class="btn btn--primary" href="login.html">Go to Portal</a>
+              <a class="btn btn--ghost" href="#announcements"
+                >View Announcements</a
+              >
+            </div>
+            <p class="hint">Tip: Use demo logins on the login page.</p>
+          </div>
+
+          <div class="card hero__card">
+            <h3>Quick Features</h3>
+            <ul class="checklist">
+              <li>Admin dashboard CRUD (Students, Lecturers, Courses)</li>
+              <li>Lecturer enters grades for enrolled students</li>
+              <li>Student views their grades</li>
+              <li>Announcements board</li>
+              <li>All data saved in localStorage</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="programs" class="section">
+        <div class="container">
+          <h2>Programs</h2>
+          <p class="muted">Sample programs (you can edit later).</p>
+          <div class="grid grid--3">
+            <div class="card">
+              <h3>BSc in Computer Science & Engineering</h3>
+              <p class="muted">Core CS + software engineering + systems.</p>
+            </div>
+            <div class="card">
+              <h3>BSc in Information Technology</h3>
+              <p class="muted">
+                Web, networking, databases, and IT operations.
+              </p>
+            </div>
+            <div class="card">
+              <h3>BSc in Data Science</h3>
+              <p class="muted">Statistics, ML, data engineering, analytics.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="admissions" class="section section--soft">
+        <div class="container">
+          <h2>Admissions</h2>
+          <div class="grid grid--2">
+            <div class="card">
+              <h3>How to apply</h3>
+              <ol class="muted">
+                <li>Prepare SSC/HSC documents</li>
+                <li>Fill the application form</li>
+                <li>Pay application fee</li>
+                <li>Attend admission test / interview</li>
+              </ol>
+            </div>
+            <div class="card">
+              <h3>Contact</h3>
+              <p class="muted">
+                Email: admissions@cstu.edu<br />
+                Phone: +880-1XXXXXXXXX<br />
+                Address: Chandpur, Bangladesh
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="announcements" class="section">
+        <div class="container">
+          <div class="stack-row stack-row--between">
+            <div>
+              <h2>Announcements</h2>
+              <p class="muted">Pulled from the portal data store.</p>
+            </div>
+            <a class="btn btn--ghost" href="login.html">Post as Admin</a>
+          </div>
+
+          <div id="publicAnnouncements" class="stack"></div>
+          <div id="publicAnnouncementsEmpty" class="empty-state" hidden>
+            <p>No announcements yet. Login as admin to create one.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <strong>CSTU</strong>
+          <div class="muted">Chandpur Science and Technology University</div>
+        </div>
+        <div class="muted">© <span id="year"></span> CSTU • Prototype</div>
+      </div>
+    </footer>
   </body>
 </html>
