@@ -12,3 +12,8 @@ console.log(firstName + " " + lastName);
 // template Literals
 let str = `hello , i am ${firstName} ${lastName} `;
 console.log(str);
+
+let mark = 72;
+if (mark >= 80) console.log(`A+`);
+else if (mark >= 70) console.log(`A`);
+else console.log(`fail`);
