@@ -54,3 +54,12 @@ let brr = [
 ];
 console.log(brr[0]);
 console.log(brr[1]);
+//objects
+let person = {
+  name: "tomal",
+  id: 17,
+  department: "cse",
+};
+for (let key in person) {
+  console.log(`${key} => ${person[key]}`);
+}
