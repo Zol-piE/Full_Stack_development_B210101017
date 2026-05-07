@@ -1,3 +1,5 @@
+"use strict";
+/*
 let js = "working";
 if (js == "working") alert("Hello World");
 else alert("World not Working");
@@ -23,3 +25,32 @@ console.log(true + true);
 let height;
 if (height) console.log(`My height is ${height}`);
 else console.log(height);
+//function learning
+let addNumber;
+function add(a, b) {
+  return a + b;
+}
+addNumber = add(2, 3);
+console.log(addNumber);
+// function expression
+let add2 = function (a, b) {
+  return a + b;
+};
+addNumber = add2(2, 3);
+//arrow function
+let add3 = (a, b) => {
+  return a + b;
+};
+addNumber = add3(2, 3);
+console.log(addNumber);
+*/
+let arr = [1, 2, "tomal", "c", , `gp`];
+arr.push(`islam`);
+console.log(arr);
+//2D array
+let brr = [
+  [`tomal`, 17, `cse`],
+  [`Sohan`, 4, `cse`],
+];
+console.log(brr[0]);
+console.log(brr[1]);
