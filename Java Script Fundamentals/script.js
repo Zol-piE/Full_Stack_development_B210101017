@@ -47,6 +47,13 @@ console.log(addNumber);
 let arr = [1, 2, "tomal", "c", , `gp`];
 arr.push(`islam`);
 console.log(arr);
+arr.unshift("Sohan");
+console.log(arr);
+arr.shift();
+console.log(arr);
+
+console.log(arr.indexOf("tomal"));
+console.log(arr.includes("tomal"));
 //2D array
 let brr = [
   [`tomal`, 17, `cse`],
