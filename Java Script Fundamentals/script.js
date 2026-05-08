@@ -66,7 +66,13 @@ let person = {
   name: "tomal",
   id: 17,
   department: "cse",
+  friends: ["sohan", "sohag", "tahmid"],
+  job: "student",
 };
 for (let key in person) {
   console.log(`${key} => ${person[key]}`);
 }
+let key = prompt("What do know About this Person?");
+
+if (person[key] === undefined) console.log("Data is not Available");
+else console.log(`His ${key} is => ${person[key]}`);
