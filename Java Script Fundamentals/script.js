@@ -66,7 +66,7 @@ let person = {
   name: "tomal",
   id: 17,
   department: "cse",
-  friends: ["sohan", "sohag", "tahmid"],
+  friends: ["sohan", "sohag", "tahmid", "Nabil"],
   job: "student",
 };
 for (let key in person) {
@@ -76,3 +76,11 @@ let key = prompt("What do know About this Person?");
 
 if (person[key] === undefined) console.log("Data is not Available");
 else console.log(`His ${key} is => ${person[key]}`);
+
+console.log(person.friends.length);
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+while (dice != 6) {
+  console.log(dice);
+  dice = Math.trunc(Math.random() * 6) + 1;
+}
