@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --bg: #0f172a;
+  --panel: #111827;
+  --accent: #22c55e;
+  --accent-dark: #16a34a;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --shadow: 0 10px 30px rgba(2, 6, 23, 0.4);
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  background:
+    radial-gradient(1200px 700px at 20% -10%, #1f2937, transparent),
+    radial-gradient(1200px 700px at 120% 10%, #0b1220, transparent), var(--bg);
+  color: var(--text);
+  font-family: "Trebuchet MS", "Segoe UI", Tahoma, sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) minmax(220px, 1fr);
+  grid-template-rows: auto auto 1fr auto;
+  gap: var(--space-lg);
+  padding: clamp(16px, 4vw, 48px);
+  overflow: auto;
+}
+.again {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  place-self: start;
+  padding: 10px 18px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  transition:
+    transform 120ms ease,
+    border-color 120ms ease;
+}
+.again:hover {
+  transform: translateY(-1px);
+  border-color: rgba(148, 163, 184, 0.7);
+}
+.again:active {
+  transform: translateY(0);
+}
+h1 {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  text-align: center;
+  font-size: clamp(24px, 4vw, 40px);
+  letter-spacing: 1px;
+}
+h2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: var(--space-xs);
+  align-self: start;
+  justify-self: end;
+  font-size: clamp(14px, 2vw, 18px);
+  color: var(--muted);
+}
+.GuessLayout {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  background: linear-gradient(
+    135deg,
+    rgba(34, 197, 94, 0.15),
+    rgba(34, 197, 94, 0.02)
+  );
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: var(--radius-lg);
+  min-height: 160px;
+  box-shadow: var(--shadow);
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.GuessLayout::before {
+  content: "?";
+  font-size: clamp(64px, 12vw, 120px);
+  font-weight: 800;
+  color: rgba(229, 231, 235, 0.9);
+  text-shadow:
+    0 0 24px rgba(34, 197, 94, 0.35),
+    0 0 8px rgba(34, 197, 94, 0.5);
+  animation: questionFloat 2.4s ease-in-out infinite;
+}
+.GuessLayout::after {
+  content: "";
+  position: absolute;
+  width: min(60%, 260px);
+  height: 12px;
+  background: radial-gradient(circle, rgba(34, 197, 94, 0.35), transparent 70%);
+  bottom: 20%;
+  filter: blur(6px);
+  animation: questionGlow 2.4s ease-in-out infinite;
+}
+
+.inputBoxes {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  display: grid;
+  gap: var(--space-sm);
+  background: var(--panel);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+}
+.inputBoxes label {
+  color: var(--muted);
+  font-size: 14px;
+}
+.inputBoxes input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: #0b1220;
+  color: var(--text);
+}
+.inputBoxes button {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--accent);
+  color: #052e16;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 120ms ease,
+    background 120ms ease;
+}
+.inputBoxes button:hover {
+  background: var(--accent-dark);
+  transform: translateY(-1px);
+}
+.scoreBox {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  display: grid;
+  gap: var(--space-xs);
+  background: var(--panel);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+  justify-self: end;
+  min-width: min(280px, 100%);
+}
+.scoreBox p {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  color: var(--text);
+}
+.scoreBox span {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+  }
+  h2 {
+    grid-column: 1/2;
+    justify-self: start;
+  }
+  h1 {
+    grid-column: 1/2;
+  }
+  .GuessLayout {
+    grid-column: 1/2;
+  }
+  .inputBoxes {
+    grid-column: 1/2;
+  }
+  .scoreBox {
+    grid-column: 1/2;
+    justify-self: stretch;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    gap: var(--space-md);
+    padding: var(--space-lg);
+  }
+  .again {
+    width: 100%;
+  }
+  .scoreBox p {
+    font-size: 14px;
+  }
+}
+
+@keyframes questionFloat {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.03);
+  }
+}
+
+@keyframes questionGlow {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scaleX(0.9);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scaleX(1.05);
+  }
+}
