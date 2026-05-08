@@ -1,7 +1,8 @@
 "use strict";
-let x = 55;
-console.log(x);
+let x = document.querySelector(".GuessLayout");
+x.style.setProperty("--symbol", '"13"');
+const button = document.querySelector(".click");
 
-function alertFun() {
-  alert("tomal");
-}
+button.addEventListener("click", () => {
+  console.log(document.querySelector("#inputNumber").value);
+});
